@@ -1,0 +1,33 @@
+
+<section class="bg-white dark:bg-gray-900">
+   
+<% dd = [
+"https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+"https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+"https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+] %>
+
+  <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+      <div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src=<%= dd[index]   %> alt="">
+          <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="#" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+              <%= post.title %>
+            </a>
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm line-clamp-3">
+            <%= post.body %>
+            </p>
+            <
+            <div class="flex justify-between items-baseline">
+              <span class="mt-3 text-sm text-blue-500">
+              <%= post.created_at.strftime("%d/%m/%Y") %> <%= time_ago_in_words(post.created_at) << " ago" %>
+              </span>
+             <% unless !user_signed_in? %>
+              <span class="mt-3 text-xs italic text-white "> author:  <%= post.user.email %> </span>
+              <% end %>
+            </div>
+            
+          </div>
+      </div>
+  </div>
+</section>
