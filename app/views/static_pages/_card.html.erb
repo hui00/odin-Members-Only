@@ -22,7 +22,7 @@
               <%= post.created_at.strftime("%d/%m/%Y") %> <%= time_ago_in_words(post.created_at) << " ago" %>
               </span>
              <% unless !user_signed_in? %>
-              <span class="mt-3 text-xs italic text-white "> author:  <%= post.user.email %> </span>
+              <span class="mt-3 text-xs italic text-gray-400"> author:  <%= post.user.email %> </span>
               <% end %>
             </div>
             
