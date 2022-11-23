@@ -151,6 +151,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.9-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.13.9-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.22.1)
     parser (3.1.2.1)
@@ -244,6 +246,7 @@ GEM
     sqlite3 (1.5.3)
       mini_portile2 (~> 2.8.0)
     sqlite3 (1.5.3-x86_64-darwin)
+    sqlite3 (1.5.3-x86_64-linux)
     stimulus-rails (1.1.1)
       railties (>= 6.0.0)
     syntax_tree (5.0.1)
@@ -259,6 +262,8 @@ GEM
     tailwindcss-rails (2.0.21)
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.21-x86_64-darwin)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.21-x86_64-linux)
       railties (>= 6.0.0)
     temple (0.9.1)
     thor (1.2.1)
@@ -293,6 +298,7 @@ GEM
 PLATFORMS
   ruby
   x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
@@ -323,4 +329,4 @@ RUBY VERSION
    ruby 3.1.2p20
 
 BUNDLED WITH
-   2.3.25
+   2.3.26
